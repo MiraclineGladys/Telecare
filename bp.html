@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Pressure Monitor</title>
+    <link rel="stylesheet" href="bp.css">
+</head>
+<body>
+    <div class="container">
+        <button class="back-button" onclick="goBack()">&#8592;</button>
+        <div class="icon">
+            <img src="bp-icon.png" alt="Blood Pressure Icon">
+        </div>
+        <div class="sensor" id="sensor">
+            <p>TOUCH THE SENSOR</p>
+            <img src="heartbeat.png" alt="Heartbeat">
+        </div>
+        <div class="result">
+            <h2>Result:</h2>
+            <p id="bp-result">Your blood pressure is -- mmHg.</p>
+        </div>
+    </div>
+    <script src="bp.js"></script>
+</body>
+</html>

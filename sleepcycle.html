@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleep-Wake Cycle Tracker</title>
+    <link rel="stylesheet" href="sleepcycle.css">
+</head>
+<body>
+    <div class="container">
+        <button class="back-button">&#8592;</button>
+        <div class="icon">&#128164;</div>
+        <div class="toggle-container">
+            <div class="toggle-box">
+                <span>Turn ON when you sleep</span>
+                <label class="switch">
+                    <input type="checkbox" id="sleepToggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="toggle-box">
+                <span>Turn ON when you take a nap</span>
+                <label class="switch">
+                    <input type="checkbox" id="napToggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+        <h2>Result:</h2>
+        <p id="result">You need X hours of sleep.</p>
+    </div>
+    
+    <script src="sleepcycle.js"></script>
+</body>
+</html>

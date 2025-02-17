@@ -1,0 +1,105 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+.container {
+    width: 300px; /* Adjust as needed */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensure content stays within rounded corners */
+}
+
+.permission-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; /* Align back button to the left */
+    margin-bottom: 20px;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 50%; /* Make the button circular */
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-button svg {
+    width: 24px;
+    height: 24px;
+}
+
+.content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    color: #333; /* Darker text color */
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Spacing between buttons */
+    width: 100%;
+}
+
+.buttons button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    text-align: center;
+    width: 100%; /* Make buttons full width */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.allow-button {
+    background-color: #673ab7; /* Purple */
+    color: #fff;
+}
+
+.only-this-time {
+    background-color: #e0e0e0; /* Light gray */
+    color: #333;
+}
+
+.deny-button {
+    background-color: #f44336; /* Red */
+    color: #fff;
+}
+
+.allow-button:hover {
+    background-color: #512da8; /* Darker purple on hover */
+}
+
+.only-this-time:hover {
+    background-color: #d0d0d0; /* Slightly darker gray on hover */
+}
+
+.deny-button:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}

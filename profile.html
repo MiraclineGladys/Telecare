@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-icon">
+            <img src="user-icon.png" alt="User Icon">
+        </div>
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email address" required>
+            
+            <label for="password">Password:</label>
+            <div class="password-wrapper">
+                <input type="password" id="password" placeholder="Enter password" required>
+                <span class="toggle-password" onclick="togglePassword()">👁</span>
+            </div>
+            
+            <div class="remember-me">
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember me</label>
+            </div>
+            
+            <button type="submit" class="login-btn">Log-in</button>
+        </form>
+        <hr>
+        <p>New user?</p>
+        <button class="signup-btn">Sign-in</button>
+        <div class="google-login">
+            <img src="google-icon.png" alt="Google Login">
+        </div>
+    </div>
+    <script src="profile.js"></script>
+</body>
+</html>

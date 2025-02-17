@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="bmi.css">
+</head>
+<body>
+    <div class="container">
+        <button class="back-button" onclick="goBack()">&#8592;</button>
+        <div class="icon">
+            <img src="bmi-icon.png" alt="BMI Icon">
+        </div>
+        <div class="input-section">
+            <input type="number" id="height" placeholder="Height (m)">
+            <input type="number" id="weight" placeholder="Weight (kg)">
+            <input type="number" id="age" placeholder="Age">
+            <button onclick="calculateBMI()">Calculate</button>
+        </div>
+        <div class="result">
+            <h2>Result:</h2>
+            <p id="bmi-result">Your BMI ratio will appear here.</p>
+        </div>
+    </div>
+    <script src="bmi.js"></script>
+</body>
+</html>
